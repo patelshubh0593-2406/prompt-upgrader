@@ -1,8 +1,7 @@
 {
   "name": "prompt-upgrader",
   "version": "1.0.0",
-  "description": "AI Prompt Upgrader — backend server",
-  "main": "server.js",
+  "description": "AI Prompt Upgrader - backend server",
   "scripts": {
     "start": "node server.js"
   },
