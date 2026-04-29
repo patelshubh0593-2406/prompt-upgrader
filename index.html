@@ -22,8 +22,6 @@
 }
 body{font-family:'Sora',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
 .wrap{max-width:800px;margin:0 auto;padding:30px 18px 56px}
- 
-/* HEADER */
 .hdr{text-align:center;padding-bottom:28px}
 .pill{display:inline-flex;align-items:center;gap:6px;font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.18em;color:var(--gold);background:var(--gold-dim);border:1px solid rgba(255,210,79,.18);padding:5px 14px;border-radius:100px;margin-bottom:16px;text-transform:uppercase}
 .pill-dot{width:5px;height:5px;border-radius:50%;background:var(--gold);animation:pulse 2s ease-in-out infinite}
@@ -31,47 +29,31 @@ body{font-family:'Sora',sans-serif;background:var(--bg);color:var(--text);min-he
 h1{font-size:30px;font-weight:700;letter-spacing:-.03em;line-height:1.2}
 h1 em{font-style:normal;color:var(--gold)}
 .sub{margin-top:10px;font-size:14px;color:var(--muted);font-weight:300;max-width:500px;margin-left:auto;margin-right:auto;line-height:1.6}
- 
-/* LANGUAGE BADGES */
 .lang-strip{display:flex;justify-content:center;flex-wrap:wrap;gap:6px;margin-top:18px}
 .lang-badge{font-size:10.5px;padding:4px 11px;border-radius:100px;background:var(--s2);border:1px solid var(--border);color:var(--hint);font-family:'JetBrains Mono',monospace;letter-spacing:.04em}
- 
-/* CARDS */
 .card{background:var(--s1);border:1px solid var(--border);border-radius:var(--r2);padding:22px;margin-bottom:14px}
 .c-hdr{display:flex;align-items:flex-start;gap:12px;margin-bottom:16px}
 .num{width:30px;height:30px;flex-shrink:0;border-radius:50%;background:var(--gold-dim);border:1px solid rgba(255,210,79,.22);display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;color:var(--gold)}
 .c-title{font-size:14.5px;font-weight:600;line-height:1.3}
 .c-desc{font-size:12px;color:var(--muted);font-weight:300;margin-top:3px;line-height:1.5}
- 
-/* INPUT */
 textarea{width:100%;min-height:115px;background:var(--s2);border:1px solid var(--border);border-radius:var(--r);color:var(--text);font-family:'Sora',sans-serif;font-size:15px;line-height:1.65;padding:14px 16px;resize:vertical;outline:none;transition:border .2s}
 textarea:focus{border-color:rgba(255,210,79,.3)}
 textarea::placeholder{color:var(--hint)}
- 
-/* QUICK EXAMPLES */
 .chips-label{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--hint);letter-spacing:.1em;text-transform:uppercase;margin-top:14px;margin-bottom:8px}
 .chips{display:flex;flex-wrap:wrap;gap:7px}
 .chip{font-size:11.5px;padding:6px 13px;border-radius:100px;background:var(--s2);border:1px solid var(--border);color:var(--muted);cursor:pointer;transition:all .15s;font-family:'Sora',sans-serif}
 .chip:hover{background:var(--gold-dim);border-color:rgba(255,210,79,.3);color:var(--gold)}
- 
-/* MAIN BUTTON */
 .btn-main{width:100%;padding:16px;background:var(--gold);color:#150e00;font-family:'Sora',sans-serif;font-size:15px;font-weight:700;border:none;border-radius:var(--r);cursor:pointer;transition:all .15s;position:relative;overflow:hidden;margin-bottom:6px;letter-spacing:.01em}
 .btn-main:hover{background:#ffe06b;transform:translateY(-1px)}
 .btn-main:active{transform:none}
 .btn-main:disabled{background:rgba(255,210,79,.22);color:rgba(21,14,0,.4);cursor:not-allowed;transform:none}
 .loader-bar{position:absolute;top:0;left:-100%;height:3px;background:rgba(0,0,0,.18);width:60%;border-radius:2px;animation:slide 1.6s ease-in-out infinite}
 @keyframes slide{0%{left:-60%}100%{left:110%}}
- 
-/* ERROR */
 .err-box{background:rgba(226,75,74,.1);border:1px solid rgba(226,75,74,.22);border-radius:8px;padding:13px 15px;font-size:13px;color:#f09595;display:none;margin-top:8px}
 .err-box.show{display:block}
- 
-/* RESULTS */
 .results{display:none}
 .results.show{display:block}
 .divider{height:1px;background:var(--border);margin:20px 0}
- 
-/* GAP TAGS */
 .tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}
 .tag{font-family:'JetBrains Mono',monospace;font-size:10.5px;font-weight:600;padding:4px 10px;border-radius:6px;display:flex;align-items:center;gap:5px}
 .t-red{background:rgba(226,75,74,.12);color:#f09595;border:1px solid rgba(226,75,74,.2)}
@@ -80,11 +62,7 @@ textarea::placeholder{color:var(--hint)}
 .t-grn{background:rgba(29,158,117,.11);color:#5dcaa5;border:1px solid rgba(29,158,117,.2)}
 .t-pur{background:rgba(127,119,221,.11);color:#afa9ec;border:1px solid rgba(127,119,221,.2)}
 .t-ok{background:rgba(29,158,117,.09);color:#5dcaa5;border:1px solid rgba(29,158,117,.16)}
- 
-/* ANALYSIS TEXT */
 .analysis{font-size:13.5px;color:var(--muted);line-height:1.7;padding:13px 16px;background:var(--s2);border-radius:8px;border-left:2px solid rgba(255,210,79,.25);margin-bottom:16px}
- 
-/* SCORE BARS */
 .score-wrap{display:flex;flex-direction:column;gap:9px}
 .score-row{display:flex;align-items:center;gap:10px}
 .s-lbl{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);width:56px;flex-shrink:0}
@@ -95,13 +73,9 @@ textarea::placeholder{color:var(--hint)}
 .s-num{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;width:52px;text-align:right}
 .n-red{color:#f09595}
 .n-gold{color:var(--gold)}
- 
-/* OUTPUT */
 .out-box{background:var(--s2);border:1px solid rgba(255,210,79,.16);border-radius:var(--r);padding:18px;font-family:'JetBrains Mono',monospace;font-size:12.5px;line-height:1.85;color:var(--text);white-space:pre-wrap;word-break:break-word;min-height:80px}
 .out-box.typing::after{content:'▋';animation:blink .65s step-end infinite;color:var(--gold)}
 @keyframes blink{50%{opacity:0}}
- 
-/* COPY */
 .copy-section{margin-top:14px}
 .copy-hint{font-size:10.5px;color:var(--hint);font-family:'JetBrains Mono',monospace;margin-bottom:9px;text-align:center;letter-spacing:.07em}
 .act-row{display:flex;gap:10px}
@@ -110,14 +84,10 @@ textarea::placeholder{color:var(--hint)}
 .btn-copy.ok{background:rgba(29,158,117,.14);border-color:rgba(29,158,117,.32);color:#5dcaa5}
 .btn-reset{padding:13px 18px;background:transparent;border:1px solid var(--border);border-radius:var(--r);color:var(--muted);font-family:'Sora',sans-serif;font-size:13px;cursor:pointer;transition:all .15s}
 .btn-reset:hover{border-color:var(--border2);color:var(--text)}
- 
-/* MANUAL COPY FALLBACK */
 .manual-copy{display:none;margin-top:12px;background:var(--s2);border:1px solid rgba(239,159,39,.22);border-radius:var(--r);padding:14px}
 .manual-copy.show{display:block}
 .manual-copy p{font-size:11.5px;color:#fac775;font-family:'JetBrains Mono',monospace;margin-bottom:8px}
 .manual-copy textarea{min-height:68px;font-size:11.5px;font-family:'JetBrains Mono',monospace;color:var(--muted);background:var(--s3);border-color:rgba(255,210,79,.1);border-radius:6px;resize:none;cursor:text}
- 
-/* FOOTER */
 .footer{text-align:center;margin-top:44px;padding-top:24px;border-top:1px solid var(--border)}
 .footer-logo{font-family:'JetBrains Mono',monospace;font-size:11px;color:rgba(255,210,79,.35);letter-spacing:.2em;text-transform:uppercase;margin-bottom:10px}
 .footer-title{font-size:15px;font-weight:600;color:rgba(238,235,228,.55);font-family:'Sora',sans-serif}
@@ -127,21 +97,18 @@ textarea::placeholder{color:var(--hint)}
 .f-stat{font-size:11px;color:rgba(238,235,228,.2);font-family:'JetBrains Mono',monospace;letter-spacing:.05em}
 .f-arrow{font-size:12px;color:rgba(255,210,79,.3);font-family:'JetBrains Mono',monospace;margin:0 2px}
 .f-sep{font-size:11px;color:rgba(255,255,255,.1);margin:0 4px}
- 
-  .retry-box{background:rgba(255,210,79,0.07);border:1px solid rgba(255,210,79,0.2);border-radius:var(--r);padding:14px 16px;margin-top:8px}
-  .retry-top{display:flex;align-items:center;gap:9px;font-size:13.5px;font-weight:600;margin-bottom:10px}
-  .retry-bar-wrap{height:3px;background:var(--s3);border-radius:10px;overflow:hidden;margin-bottom:8px}
-  .retry-bar{height:100%;background:var(--gold);border-radius:10px;width:0%;transition:width 0.1s linear}
-  .retry-bottom{display:flex;align-items:center;justify-content:space-between}
-  #retryCountdown{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted)}
-  .btn-cancel{font-size:11px;padding:3px 10px;border-radius:6px;background:transparent;border:1px solid var(--border);color:var(--muted);cursor:pointer;font-family:'Sora',sans-serif}
-  .btn-cancel:hover{border-color:var(--border2);color:var(--text)}
+.retry-box{background:rgba(255,210,79,0.07);border:1px solid rgba(255,210,79,0.2);border-radius:var(--r);padding:14px 16px;margin-top:8px}
+.retry-top{display:flex;align-items:center;gap:9px;font-size:13.5px;font-weight:600;margin-bottom:10px}
+.retry-bar-wrap{height:3px;background:var(--s3);border-radius:10px;overflow:hidden;margin-bottom:8px}
+.retry-bar{height:100%;background:var(--gold);border-radius:10px;width:0%;transition:width 0.1s linear}
+.retry-bottom{display:flex;align-items:center;justify-content:space-between}
+#retryCountdown{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted)}
+.btn-cancel{font-size:11px;padding:3px 10px;border-radius:6px;background:transparent;border:1px solid var(--border);color:var(--muted);cursor:pointer;font-family:'Sora',sans-serif}
+.btn-cancel:hover{border-color:var(--border2);color:var(--text)}
 </style>
 </head>
 <body>
 <div class="wrap">
- 
-  <!-- HEADER -->
   <div class="hdr">
     <div class="pill"><span class="pill-dot"></span>Personal AI Prompt Lab</div>
     <h1>Prompt <em>Upgrader</em> ⚡</h1>
@@ -158,7 +125,6 @@ textarea::placeholder{color:var(--hint)}
     </div>
   </div>
  
-  <!-- INPUT CARD -->
   <div class="card">
     <div class="c-hdr">
       <div class="num">1</div>
@@ -167,7 +133,7 @@ textarea::placeholder{color:var(--hint)}
         <div class="c-desc">Don't worry about how it sounds — just describe what you need, in whichever language feels natural to you.</div>
       </div>
     </div>
-    <textarea id="rawInput" placeholder="Example: Help me grow my YouTube channel fast... / Write a business plan for my startup... / I want to learn coding from scratch... / How do I get my first freelance client?&#10;&#10;Just type whatever is on your mind — any language works."></textarea>
+    <textarea id="rawInput" placeholder="Example: Help me grow my YouTube channel fast... / Write a business plan for my startup... / I want to learn coding from scratch...&#10;&#10;Just type whatever is on your mind — any language works."></textarea>
     <p class="chips-label">Quick examples</p>
     <div class="chips">
       <div class="chip" onclick="fill('I run a faceless motivational YouTube Shorts channel and want 10x growth fast')">▶ Grow YouTube Shorts 10x</div>
@@ -193,11 +159,8 @@ textarea::placeholder{color:var(--hint)}
     </div>
   </div>
  
-  <!-- RESULTS -->
   <div class="results" id="res">
     <div class="divider"></div>
- 
-    <!-- ANALYSIS CARD -->
     <div class="card">
       <div class="c-hdr">
         <div class="num">2</div>
@@ -221,8 +184,6 @@ textarea::placeholder{color:var(--hint)}
         </div>
       </div>
     </div>
- 
-    <!-- OUTPUT CARD -->
     <div class="card">
       <div class="c-hdr">
         <div class="num">3</div>
@@ -246,7 +207,6 @@ textarea::placeholder{color:var(--hint)}
     </div>
   </div>
  
-  <!-- FOOTER -->
   <div class="footer">
     <div class="footer-logo">⚡ Prompt Upgrader</div>
     <div class="footer-title">Your Personal <strong>AI Prompt Engine</strong> — Built for Peak Performance</div>
@@ -263,23 +223,18 @@ textarea::placeholder{color:var(--hint)}
       <span class="f-stat">Every time</span>
     </div>
   </div>
- 
 </div>
+ 
 <script>
+// Google Analytics
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+ 
 const SYS=`You are a world-class prompt engineering expert.
  
 ###{LANGUAGE MIRROR — YOUR #1 PRIORITY — NEVER IGNORE THIS}###
 The user message will tell you the detected language at the top. You MUST write your ENTIRE JSON response in that EXACT language or language-mix — every word of "analysis" and every word of "upgraded_prompt".
- 
-CORRECT EXAMPLES:
-- Language is "Gujarati+English mix" → write everything in Gujarati+English mix
-- Language is "Hindi+English mix (Hinglish)" → write everything in Hinglish
-- Language is "Pure Gujarati" → write everything in Gujarati only
-- Language is "Pure Hindi" → write everything in Hindi only  
-- Language is "Pure English" → write everything in English only
- 
-NEVER switch to English unless the user wrote in English. Mirror the exact language style.
-Section headers (AI ROLE:, CONTEXT:, SPECIFIC TASK:, OUTPUT FORMAT:, CONSTRAINTS:, SUCCESS CRITERIA:) can stay in English as labels — but ALL content under them must be in the user's language.
  
 GAPS TO IDENTIFY:
 VAGUE = Too generic, no specifics
@@ -292,8 +247,8 @@ TOO_SHORT = Needs far more detail
  
 Score original 1-100. Score upgraded 1-100.
  
-Return ONLY this JSON — no extra text, no code fences:
-{"gaps":["VAGUE"],"analysis":"2-3 sentences in the EXACT language told to you.","score_before":18,"score_after":94,"upgraded_prompt":"AI ROLE: [in user language]\n\nCONTEXT:\n[in user language]\n\nSPECIFIC TASK:\n[in user language]\n\nOUTPUT FORMAT:\n[in user language]\n\nCONSTRAINTS:\n[in user language]\n\nSUCCESS CRITERIA:\n[in user language]"}`
+Return ONLY this JSON — no extra text, no code fences, no markdown:
+{"gaps":["VAGUE"],"analysis":"2-3 sentences in the EXACT language told to you.","score_before":18,"score_after":94,"upgraded_prompt":"AI ROLE: [in user language]\\n\\nCONTEXT:\\n[in user language]\\n\\nSPECIFIC TASK:\\n[in user language]\\n\\nOUTPUT FORMAT:\\n[in user language]\\n\\nCONSTRAINTS:\\n[in user language]\\n\\nSUCCESS CRITERIA:\\n[in user language]"}`;
  
 const TAGS={VAGUE:['t-red','⚠'],NO_CONTEXT:['t-amb','📭'],NO_GOAL:['t-blue','🎯'],NO_SCOPE:['t-grn','📐'],NO_TONE:['t-pur','🎭'],AMBIGUOUS:['t-red','❓'],TOO_SHORT:['t-amb','📏']};
  
@@ -301,9 +256,18 @@ function fill(t){document.getElementById('rawInput').value=t}
 function setErr(m){const b=document.getElementById('errBox');b.innerHTML=m?'❌ '+m:'';b.classList.toggle('show',!!m)}
  
 function extractJSON(txt){
-  try{return JSON.parse(txt.replace(/```json|```/g,'').trim())}catch(e){}
-  const s=txt.indexOf('{'),e=txt.lastIndexOf('}');
-  if(s!==-1&&e>s){try{return JSON.parse(txt.slice(s,e+1))}catch(e2){}}
+  if(!txt) return null;
+  // Clean common issues
+  txt = txt.replace(/```json|```/g,'').trim();
+  // Try direct parse
+  try{return JSON.parse(txt)}catch(e){}
+  // Find JSON object
+  const s=txt.indexOf('{');
+  const e=txt.lastIndexOf('}');
+  if(s!==-1&&e>s){
+    try{return JSON.parse(txt.slice(s,e+1))}catch(e2){}
+  }
+  // Regex fallback
   const m=txt.match(/\{[\s\S]*"upgraded_prompt"[\s\S]*\}/);
   if(m){try{return JSON.parse(m[0])}catch(e3){}}
   return null;
@@ -311,51 +275,56 @@ function extractJSON(txt){
  
 function sleep(ms){return new Promise(r=>setTimeout(r,ms))}
  
-function friendlyError(status, msg){
-  if(status===529||/overload/i.test(msg)) return '⏳ Servers are busy right now — auto-retrying...';
-  if(status===529||/rate.limit/i.test(msg)) return '⏳ Rate limit hit — waiting and retrying...';
-  if(status===401||/auth|api.key/i.test(msg)) return '🔑 API key issue — please refresh the page.';
-  if(status===400) return '⚠ Bad request — try a slightly different prompt.';
-  if(!navigator.onLine) return '📡 No internet connection — check your network.';
-  return msg||'Something went wrong — retrying...';
-}
- 
-async function callAPI(prompt, extraInstruction, modelName){
-  const model = modelName || 'openrouter/auto';
+async function callAPI(prompt, extraInstruction){
   const sysPrompt = extraInstruction ? SYS+'\n\n'+extraInstruction : SYS;
+  
+  const hasGujarati=/[\u0A80-\u0AFF]/.test(prompt);
+  const hasDevanagari=/[\u0900-\u097F]/.test(prompt);
+  const hasArabic=/[\u0600-\u06FF]/.test(prompt);
+  const hasLatin=/[a-zA-Z]/.test(prompt);
+  let lang='Pure English';
+  if(hasGujarati&&hasLatin) lang='Gujarati+English mix';
+  else if(hasGujarati) lang='Pure Gujarati';
+  else if(hasDevanagari&&hasLatin) lang='Hindi+English mix (Hinglish)';
+  else if(hasDevanagari) lang='Pure Hindi';
+  else if(hasArabic&&hasLatin) lang='Arabic+English mix';
+  else if(hasArabic) lang='Pure Arabic';
+ 
+  const userContent='USER LANGUAGE DETECTED: '+lang+'\n\nYou MUST write your entire response (analysis + upgraded_prompt) in this language: '+lang+'\n\nCRITICAL: Return ONLY raw JSON. No text before or after. No code fences.\n\nNow upgrade this prompt: "'+prompt+'"';
+ 
   const resp = await fetch('https://prompt-upgrader-api.shubhptlwork.workers.dev',{
     method:'POST',
     headers:{'Content-Type':'application/json'},
     body:JSON.stringify({
-      model,
+      model:'openrouter/auto',
       max_tokens:1600,
       system:sysPrompt,
-      messages:[{role:'user',content:(()=>{
-        const t=prompt;
-        // Detect language mix
-        const hasGujarati=/[\u0A80-\u0AFF]/.test(t);
-        const hasDevanagari=/[\u0900-\u097F]/.test(t);
-        const hasArabic=/[\u0600-\u06FF]/.test(t);
-        const hasLatin=/[a-zA-Z]/.test(t);
-        let lang='Pure English';
-        if(hasGujarati&&hasLatin) lang='Gujarati+English mix';
-        else if(hasGujarati) lang='Pure Gujarati';
-        else if(hasDevanagari&&hasLatin) lang='Hindi+English mix (Hinglish)';
-        else if(hasDevanagari) lang='Pure Hindi';
-        else if(hasArabic&&hasLatin) lang='Arabic+English mix';
-        else if(hasArabic) lang='Pure Arabic';
-        else if(!hasLatin) lang='Non-Latin script language';
-        return 'USER LANGUAGE DETECTED: '+lang+'\n\nYou MUST write your entire response (analysis + upgraded_prompt) in this language: '+lang+'\n\nNow upgrade this prompt: "'+t+'"';
-      })()}]
+      messages:[{role:'user',content:userContent}]
     })
   });
- const data=await resp.json();
+ 
+  const data = await resp.json();
+  
+  // Handle error response
   if(data.error){
     const err=new Error(data.error?.message||'API Error');
     err.status=resp.status;
     throw err;
   }
-  return data.content?.find(b=>b.type==='text')?.text||'';
+ 
+  // Extract text from response — works with both Anthropic and OpenRouter format
+  let text = '';
+  if(data.content && Array.isArray(data.content)){
+    // Anthropic format (from Worker conversion)
+    text = data.content.find(b=>b.type==='text')?.text || '';
+  } else if(data.choices && data.choices[0]){
+    // OpenRouter direct format
+    text = data.choices[0].message?.content || '';
+  } else if(typeof data === 'string'){
+    text = data;
+  }
+  
+  return text;
 }
  
 let _cancelRetry=false;
@@ -393,9 +362,7 @@ function showRetryBox(msg,countdownSec){
   });
 }
  
-function hideRetryBox(){
-  document.getElementById('retryBox').style.display='none';
-}
+function hideRetryBox(){document.getElementById('retryBox').style.display='none';}
  
 function resetUI(){
   const btn=document.getElementById('upBtn');
@@ -429,23 +396,17 @@ async function run(){
   document.getElementById('res').classList.remove('show');
   document.getElementById('manualBox').classList.remove('show');
  
-  const EXTRA='CRITICAL: Return ONLY the raw JSON object. No text before or after. No code fences.';
-  // Model rotation — haiku is separate server pool, less likely to be overloaded  
-  const models=['openrouter/auto','openrouter/auto','openrouter/auto','openrouter/auto','openrouter/auto'];
-  const extras=[null,null,EXTRA,EXTRA,EXTRA];
-  // Countdown seconds per retry round: 5, 8, 12, 18, 25
+  const EXTRA='CRITICAL: Return ONLY the raw JSON object. No text before or after. No code fences. No markdown.';
   const waits=[5,8,12,18,25];
- 
   let round=0;
+ 
   while(true){
-    const model=models[Math.min(round,models.length-1)];
-    const extra=extras[Math.min(round,extras.length-1)];
     btn.innerHTML='<div class="loader-bar"></div>🔄 '+(round===0?'Upgrading your prompt...':'Retrying ('+(round+1)+')...');
     try{
-      const txt=await callAPI(raw,extra,model);
+      const extra = round >= 2 ? EXTRA : null;
+      const txt=await callAPI(raw, extra);
       const parsed=extractJSON(txt);
       if(!parsed){
-        // Unreadable response — retry immediately once, then countdown
         if(round===0){round++;continue;}
         throw new Error('Response unreadable after retry');
       }
@@ -455,29 +416,30 @@ async function run(){
       resetUI();
       return;
     }catch(err){
-      // Auth error — no point retrying
       if(err.status===401){
         hideRetryBox();
         setErr('Session expired — please refresh the page.');
         resetUI();
         return;
       }
-      // No internet
       if(!navigator.onLine){
         hideRetryBox();
         setErr('No internet connection. Check your network and try again.');
         resetUI();
         return;
       }
-      // Everything else — overload, 529, 500, parse fail, network blip — auto-retry with countdown
       round++;
+      if(round>5){
+        hideRetryBox();
+        setErr('Unable to get response. Please try again later.');
+        resetUI();
+        return;
+      }
       const waitSec=waits[Math.min(round-1,waits.length-1)];
       const isOverload=err.status===529||err.status===500||/overload|unavailable/i.test(err.message||'');
-      const msg=isOverload
-        ?'Servers are busy — auto-retrying...'
-        :'Temporary issue — auto-retrying...';
+      const msg=isOverload?'Servers are busy — auto-retrying...':'Temporary issue — auto-retrying...';
       const shouldContinue=await showRetryBox(msg,waitSec);
-      if(!shouldContinue||_cancelRetry) return; // user cancelled
+      if(!shouldContinue||_cancelRetry) return;
     }
   }
 }
